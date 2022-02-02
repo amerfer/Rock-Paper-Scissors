@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    
+    <div class="scoreboard">
+        <div id="user-label" class="badge">User</div>
+        <div id="computer-label" class="badge">Computer</div>
+        <span id="user-score">0</span> : <span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+        <p id = "text-result">Choose and click play</p>
+    </div>
+
+    <div class="display">
+        
+            <div class="user-image">
+                <img id="left-image" />
+            </div>
+        
+        
+            <div class="computer-image">
+                <img id="right-image" />
+            </div>
+        
+    </div>
+
+    <div id= choices class="choices">
+        <div id="choice">
+            <button id="Rock" onclick="choice('rock')">Rock</button>
+            <button id="Paper" onclick="choice('paper')">Paper</button>
+            <button id="Scissors" onclick="choice('scissors')">Scissors</button>
+        </div>   
+    </div>
+
+    <div class="play">
+        <button id="start" onclick="play()">Play</button>
+        
+        <!-- this button is hidden, will appear after pressing play -->
+        <button id="play-again"  onclick="playAgain()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

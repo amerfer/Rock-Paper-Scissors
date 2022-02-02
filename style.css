@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(128, 145, 240);
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px rgb(180, 180, 180);
+    padding: 15px
+}
+
+.scoreboard{
+    background-color: rgb(251, 251, 117);
+
+    padding: 5px;
+    margin: 10px auto;
+    width: 200px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: black;
+
+    border: 2px solid black;
+    border-radius:4px;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.badge {
+    background-color:rgb(255, 83, 83);
+    color: white;
+    font-size:14px;
+    padding: 4px 10px;
+}
+
+#user-label {
+    position: absolute;
+    top: 30%;
+    left: -20px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30%;
+    right: -40px;
+}
+
+.result{
+    /* background-color: green; */
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: white;
+
+    text-align: center;
+    padding: 1%;
+}
+
+
+        /* Class: display */ 
+.display{
+    display: flex;
+    height: 500px;
+}
+
+.display .user-image {
+    background-color: rgb(219, 219, 219);
+    grid-area: user-image; 
+    padding-top: 100px;
+
+    /*split the display class in half*/
+    /*user on the left*/
+    width:50%;
+    float: left;
+    
+}
+
+.display .computer-image{
+    
+    background-color: rgb(129, 129, 129);
+    grid-area: computer-image; 
+    padding-top: 100px;
+
+    /*split the display class in half*/
+    /*computer on the right*/
+    float: right;
+    width:50%;
+    
+    
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /*----------------------------*/
+
+button{
+    background-color:lightgrey;
+    padding: 10px;
+    width: 100px;
+    box-shadow: 0 5px #666;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+    border: 2px solid white;
+    border-radius: 3px;
+
+    cursor: pointer;
+
+
+
+}
+
+
+
+button:hover {
+    background-color: #909090
+}
+
+button:active{
+    background-color: #6b6b6b;
+    box-shadow: 0 5px rgb(61, 61, 61);
+    transform: translateY(4px)
+}
+
+.choices{
+
+    /* background-color:grey; */
+    text-align: center;
+
+    padding: 20px;
+}
+
+.play{
+    text-align: center;
+}
+
+#start, #play-again{
+    background-color: rgb(76, 180, 57);
+}
+
+#play-again{
+    display: none;
+}
